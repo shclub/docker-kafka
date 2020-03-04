@@ -30,12 +30,14 @@ kafka-console-producer.sh --broker-list $KAFKA --topic test
 ```bash
 export ZOOKEEPER=`docker-machine ip \`docker-machine active\``:2181
 kafka-console-consumer.sh --zookeeper $ZOOKEEPER --topic test
+
 ```
 --- sample ----
-```bash
+```
+---
 
 https://miiingo.tistory.com/196
-```bash
+```
 
 version: '2'
 ```
@@ -69,10 +71,9 @@ services:
       - zookeeper
     networks:
       - test
-```bash
-
+```
 -----end of sample 
-```bash
+```
 
 Running the proxy
 -----------------
