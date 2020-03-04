@@ -35,10 +35,10 @@ kafka-console-consumer.sh --zookeeper $ZOOKEEPER --topic test
 https://miiingo.tistory.com/196
 
 version: '2'
-
+```
 networks:
   test:
-
+```
 services:
   zookeeper:
     image: wurstmeister/zookeeper:3.4.6
@@ -47,7 +47,7 @@ services:
       - "2181:2181"
     networks:
       - test
-
+```
   kafka:
     image: wurstmeister/kafka:2.12-2.0.1
     container_name: kafka
@@ -66,7 +66,8 @@ services:
       - zookeeper
     networks:
       - test
-
+```
+-----end of sample 
 Running the proxy
 -----------------
 
